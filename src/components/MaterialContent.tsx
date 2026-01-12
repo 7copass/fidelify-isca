@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
+import { RevenueLossChart, RevenueSourceChart, ComparisonChart, RepurchaseCycleChart, GrowthProjectionChart } from './Charts'
 
-// SVG Icons
 const Icons = {
     arrow: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>,
     user: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>,
@@ -155,6 +155,7 @@ export default function MaterialContent() {
                         </tbody>
                     </table>
                 </div>
+                <RevenueLossChart />
                 <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20parar%20de%20perder%20dinheiro" className="cta-chapter" target="_blank" rel="noopener noreferrer">
                     <span className="cta-arrow">{Icons.arrow}</span>
                     Quero parar de perder dinheiro
@@ -174,6 +175,7 @@ export default function MaterialContent() {
                     <li><span className="check-icon-svg">{Icons.check}</span>Oferece algo relevante</li>
                     <li><span className="check-icon-svg">{Icons.check}</span>Gera recompra automática</li>
                 </ul>
+                <RevenueSourceChart />
                 <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20esse%20sistema%20na%20minha%20loja" className="cta-chapter" target="_blank" rel="noopener noreferrer">
                     <span className="cta-arrow">{Icons.arrow}</span>
                     Quero esse sistema na minha loja
@@ -197,6 +199,7 @@ export default function MaterialContent() {
                     <div className="flow-connector">→</div>
                     <div className="flow-step highlight-step"><div className="step-icon-svg">{Icons.dollar}</div><div className="step-label">Caixa</div></div>
                 </div>
+                <RepurchaseCycleChart />
                 <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20implantar%20esse%20mapa%20na%20minha%20empresa" className="cta-chapter" target="_blank" rel="noopener noreferrer">
                     <span className="cta-arrow">{Icons.arrow}</span>
                     Quero implantar esse mapa na minha empresa
@@ -215,6 +218,7 @@ export default function MaterialContent() {
                         <p>Sistema = <strong>previsibilidade</strong></p>
                     </div>
                 </div>
+                <ComparisonChart />
                 <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20sair%20da%20sorte%20e%20entrar%20no%20sistema" className="cta-chapter" target="_blank" rel="noopener noreferrer">
                     <span className="cta-arrow">{Icons.arrow}</span>
                     Quero sair da sorte e entrar no sistema
@@ -261,6 +265,7 @@ export default function MaterialContent() {
                 <div className="conclusion-box">
                     <p>Isso é uma <strong>máquina de recompra</strong>.</p>
                 </div>
+                <GrowthProjectionChart />
                 <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20ativar%20máquina%20de%20recompra%20na%20minha%20loja" className="cta-chapter" target="_blank" rel="noopener noreferrer">
                     <span className="cta-arrow">{Icons.arrow}</span>
                     Ativar máquina de recompra na minha loja
